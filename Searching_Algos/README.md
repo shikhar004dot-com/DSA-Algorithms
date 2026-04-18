@@ -7,6 +7,7 @@ This folder contains implementations of various searching algorithms in Java.
 ## Algorithms Included
 
 * Binary Search
+* Linear Search
 
 ---
 
@@ -139,4 +140,85 @@ public static int linearSearch(int[] arr, int key) {
 }
 ```
 
+---
+
+## Jump Search
+
+### Definition
+
+Jump Search is an algorithm for searching in a **sorted array** by jumping ahead by fixed steps and then performing a linear search within the identified block.
+
+---
+
+### How It Works
+
+* Jump ahead by √n steps
+* Find the block where the element may exist
+* Perform linear search in that block
+
+---
+
+### Example
+
+Array: `[1, 3, 4, 6, 7, 13, 14, 16]`
+Target: `13`
+
+Steps:
+
+1. Jump to index 2 → value 4
+2. Jump to index 4 → value 7
+3. Jump to index 6 → value 14 (crossed target)
+4. Linear search between previous block → found 
+
+---
+
+### Algorithm
+
+1. Calculate step = √n
+2. Jump in blocks until element exceeds key
+3. Perform linear search in that block
+
+---
+
+### Time Complexity
+
+* Best Case: O(1)
+* Average Case: O(√n)
+* Worst Case: O(√n)
+
+---
+
+### Important
+
+Works only on **sorted arrays**
+
+---
+
+### Java Code
+
+```java
+public static int jumpSearch(int[] arr, int key) {
+    int n = arr.length;
+    int step = (int)Math.sqrt(n);
+    int prev = 0;
+
+    while (arr[Math.min(step, n) - 1] < key) {
+        prev = step;
+        step += (int)Math.sqrt(n);
+        if (prev >= n)
+            return -1;
+    }
+
+    while (arr[prev] < key) {
+        prev++;
+        if (prev == Math.min(step, n))
+            return -1;
+    }
+
+    if (arr[prev] == key)
+        return prev;
+
+    return -1;
+}
+```
 
