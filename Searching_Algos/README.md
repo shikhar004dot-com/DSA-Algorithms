@@ -8,6 +8,7 @@ This folder contains implementations of various searching algorithms in Java.
 
 * Binary Search
 * Linear Search
+* Jump Search
 
 ---
 
