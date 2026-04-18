@@ -1,4 +1,4 @@
-# 🚀 Data Structures & Algorithms in Java
+# Data Structures & Algorithms in Java
 
 This repository contains implementations of important **Data Structures and Algorithms (DSA)** in Java for interview preparation and concept building.
 
@@ -65,9 +65,9 @@ To master DSA for coding interviews, placements, and problem-solving.
 
 ## Progress
 
-* Searching: ✅ Started
-* Sorting: ✅ Started
-* Others: 🔄 In Progress
+* Searching: Started
+* Sorting: Started
+* Others: In Progress
 
 ---
 
