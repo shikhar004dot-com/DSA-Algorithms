@@ -4,7 +4,7 @@ This folder contains implementations of sorting algorithms in Java.
 
 ---
 
-## **Bubble Sort
+# Bubble Sort
 
 Bubble Sort is a simple comparison-based sorting algorithm where adjacent elements are compared and swapped if they are in the wrong order.
 
@@ -95,7 +95,7 @@ public static int[] bubbleSort(int arr[]) {
 
 ---
 
-## **Selection Sort
+# Selection Sort
 
 Selection Sort is a simple comparison-based sorting algorithm that repeatedly selects the smallest element from the unsorted part of the array and places it at the correct position.
 
