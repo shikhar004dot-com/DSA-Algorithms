@@ -94,3 +94,101 @@ public static int[] bubbleSort(int arr[]) {
 * Academic purposes
 
 ---
+
+## Selection Sort
+
+Selection Sort is a simple comparison-based sorting algorithm that repeatedly selects the smallest element from the unsorted part of the array and places it at the correct position.
+
+---
+
+### How It Works
+
+* Start from index `i = 0`
+* Assume current index is the minimum (`minIdx = i`)
+* Compare it with the rest of the array
+* Find the smallest element
+* Swap it with the current index
+* Repeat for all elements
+
+---
+
+### Time Complexity
+
+| Case       | Complexity |
+| ---------- | ---------- |
+| Best Case  | O(n²)      |
+| Average    | O(n²)      |
+| Worst Case | O(n²)      |
+
+---
+
+### Space Complexity
+
+* O(1) → In-place sorting
+
+---
+
+### Example
+
+**Input:**
+
+```id="input"
+[1, 2, 3, 2, 5, 7, 8, 5, 10]
+```
+
+**Output:**
+
+```id="output"
+[1, 2, 2, 3, 5, 5, 7, 8, 10]
+```
+
+---
+
+### Java Implementation
+
+```java id="code"
+public static int[] selectionSort(int arr[]) {
+    for(int i = 0; i < arr.length; i++) {
+        int minidx = i;
+
+        for(int j = i + 1; j < arr.length; j++) {
+            if(arr[j] < arr[minidx]) {
+                minidx = j;
+            }
+        }
+
+        int temp = arr[i];
+        arr[i] = arr[minidx];
+        arr[minidx] = temp;
+    }
+    return arr;
+}
+```
+
+---
+
+### Advantages
+
+* Simple and easy to implement
+* Performs minimum number of swaps
+* Works well for small datasets
+
+---
+
+### Disadvantages
+
+* Inefficient for large datasets
+* Time complexity is always O(n²)
+* Not stable (may change order of equal elements)
+
+---
+
+### When to Use
+
+* When memory is limited (in-place sorting)
+* For small datasets
+* For learning sorting concepts
+
+---
+
+
