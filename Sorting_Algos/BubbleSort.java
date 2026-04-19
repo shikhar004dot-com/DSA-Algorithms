@@ -6,11 +6,11 @@ class BubbleSort{
     }
     public static int [] bubbleSort(int arr[]){
         for(int i=0;i<arr.length;i++){ //O(n)
-            for(int j=i+1;j<arr.length-1;j++){ //O(n)
-                if(arr[i]>arr[j]){
-                    int dn=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=dn;
+            for(int j=0;j<arr.length-i-1;j++){ //O(n)
+                if(arr[j]>arr[j+1]){
+                    int dn=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=dn;
                 }
             }
         }  //time complexity--> O(n^2)
