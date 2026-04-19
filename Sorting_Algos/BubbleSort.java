@@ -1,7 +1,7 @@
 import java.util.*;
 class BubbleSort{
     public static void main(String args[]){
-        int arr[]= {2,3,1,4,6,8,5,3,7,9,10};
+        int arr[]= {2,3,1,4,6,8,5};
         System.out.println(Arrays.toString(bubbleSort(arr)));
     }
     public static int [] bubbleSort(int arr[]){
