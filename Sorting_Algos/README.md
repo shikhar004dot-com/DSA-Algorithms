@@ -191,4 +191,67 @@ public static int[] selectionSort(int arr[]) {
 
 ---
 
+# Insertion Sort
 
+Insertion Sort builds the sorted array one element at a time by inserting elements into their correct position.
+
+It works like sorting playing cards in your hand.
+
+---
+
+How It Works
+Start from second element
+Compare with left side
+Shift larger elements
+Insert element at correct position
+
+---  
+
+⏱ Time Complexity
+Case	Complexity
+Best	O(n)
+Average	O(n²)
+Worst	O(n²)
+
+---  
+
+Space Complexity
+O(1) → In-place
+
+---
+
+Step-by-Step Dry Run
+
+Let’s sort:
+
+[5, 3, 4, 1, 2]
+👉 Step 1
+
+---
+
+Take 3, compare with 5, insert before it:
+
+[3, 5, 4, 1, 2]
+👉 Step 2
+
+---
+
+Take 4, place between 3 and 5:
+
+[3, 4, 5, 1, 2]
+👉 Step 3
+
+---
+
+Take 1, shift everything right:
+
+[1, 3, 4, 5, 2]
+👉 Step 4
+
+---
+
+Take 2, place after 1:
+
+[1, 2, 3, 4, 5]
+
+---
