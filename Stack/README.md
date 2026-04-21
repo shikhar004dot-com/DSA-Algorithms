@@ -1,5 +1,5 @@
 # Stack Implementation in Java
-
+    Using Arrays
 ---
 
 ## 🔎 About Stack
