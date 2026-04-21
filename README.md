@@ -9,12 +9,14 @@ This repository contains implementations of important **Data Structures and Algo
 ### Searching
 
 * Binary Search
-* (More coming...)
+* Linear Search
+* Jump Search
 
 ### Sorting
 
 * Bubble Sort
-* (More coming...)
+* InsertionSort
+* SelectionSort
 
 ### Linked List
 
@@ -22,7 +24,7 @@ This repository contains implementations of important **Data Structures and Algo
 
 ### Stack & Queue
 
-* (Coming soon...)
+* Started
 
 ### Trees
 
@@ -41,11 +43,20 @@ DSA-Algorithms/
 │
 ├── Searching/
 │   ├── BinarySearch.java
+|   |── LinearSearch.java
+|   |──  JumpSearch.java
 │   └── README.md
 │
 ├── Sorting/
 │   └── BubbleSort.java
+|   |── InsertionSort.java
+|   |── SelectionSort.java
 │
+|──Stack/
+|   └──stack.java
+|   └──stack_client.java
+|   └──README.md
+|
 └── README.md
 ```
 
